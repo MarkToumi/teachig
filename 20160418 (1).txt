@@ -1,0 +1,23 @@
+// ConsoleApplication1.cpp : コンソール アプリケーションのエントリ ポイントを定義します。
+//
+
+#include "stdafx.h"
+#include<iostream>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int i = 0;
+	float sum = 0;
+	float x;
+	// ４個のfloatデータを入力し、合計を表示
+	cout << "４回数値を入力してください" << endl;
+	for (i = 0; i < 4; i++)
+	{
+		cin >> x;
+		sum += x;
+	}
+	cout << sum << endl;
+	return 0;
+}

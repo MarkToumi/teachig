@@ -1,0 +1,33 @@
+// ConsoleApplication1.cpp : コンソール アプリケーションのエントリ ポイントを定義します。
+//
+
+#include "stdafx.h"
+#include<iostream>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	char c;
+	cout << "C:";
+	cin >> c;
+	// 0,1を入力された場合はaと表示
+	// 2,3を入力された場合はb表示
+	// それ以外はdefaultと表示
+	switch (c)
+	{
+	case '0':
+	case '1':
+		cout << "a\n";
+		break;
+	case '2':
+	case '3':
+		cout << "b\n";
+		break;
+	default:
+		cout << "default\n";
+		break;
+	}
+	// 
+	return 0;
+}
